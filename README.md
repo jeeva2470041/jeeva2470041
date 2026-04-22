@@ -126,44 +126,39 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
 <!-- SKILLS SECTION -->
 ## <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="30" /> Tech Stack
 
+<div align="center">
+
 <table>
   <tr>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <h4>💻 Languages</h4>
       <br/>
-      <img src="https://skillicons.dev/icons?i=python,dart,js,html,css,java&perline=3" />
+      <img src="https://skillicons.dev/icons?i=python,dart,js,html,css,java&perline=6" />
       <br/><br/>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <h4>⚡ Frameworks</h4>
       <br/>
-      <img src="https://skillicons.dev/icons?i=flutter,react,flask&perline=3" />
+      <img src="https://skillicons.dev/icons?i=flutter,react,flask&perline=6" />
       <br/><br/>
     </td>
-    <td align="center" width="25%">
+  </tr>
+  <tr>
+    <td align="center" width="50%">
       <h4>🗄️ Databases</h4>
       <br/>
-      <img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlite,firebase&perline=2" />
+      <img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlite,firebase&perline=6" />
       <br/><br/>
     </td>
-    <td align="center" width="25%">
+    <td align="center" width="50%">
       <h4>🛠️ Tools</h4>
       <br/>
-      <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,postman&perline=3" />
+      <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,postman&perline=6" />
       <br/><br/>
     </td>
   </tr>
 </table>
 
-<br/>
-
-<div align="center">
-  
-  <!-- INTERACTIVE SKILLS PAGE LINK -->
-  <a href="https://jeeva2470041.github.io/skills"/>
-    <img src="https://img.shields.io/badge/🔍_Explore_Interactive_Skills_Page-58a6ff?style=for-the-badge&labelColor=0d1117" />
-  </a>
-  
 </div>
 
 ---
@@ -189,7 +184,26 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
 
 ---
 
+<!-- TROPHY SECTION -->
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=jeeva2470041&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=5&margin-h=5" width="98%" />
+</div>
 
+---
+
+<!-- CONTRIBUTION & CLOSING -->
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jeeva2470041&theme=github_dark" width="98%" />
+  <br/><br/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=jeeva2470041&theme=github_dark&utcOffset=5.5" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jeeva2470041&theme=github_dark" width="49%" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="95%" />
+</div>
 
 ---
 
