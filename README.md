@@ -133,32 +133,24 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
       <br/>
       <img src="https://skillicons.dev/icons?i=python,dart,js,html,css,java&perline=3" />
       <br/><br/>
-      <img src="https://img.shields.io/badge/Python-Expert-58a6ff?style=flat-square" />
-      <img src="https://img.shields.io/badge/Dart-Advanced-58a6ff?style=flat-square" />
     </td>
     <td align="center" width="25%">
       <h4>⚡ Frameworks</h4>
       <br/>
       <img src="https://skillicons.dev/icons?i=flutter,react,flask&perline=3" />
       <br/><br/>
-      <img src="https://img.shields.io/badge/Flutter-Advanced-39d0d8?style=flat-square" />
-      <img src="https://img.shields.io/badge/React-Proficient-39d0d8?style=flat-square" />
     </td>
     <td align="center" width="25%">
       <h4>🗄️ Databases</h4>
       <br/>
       <img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlite,firebase&perline=2" />
       <br/><br/>
-      <img src="https://img.shields.io/badge/SQLite-Expert-3fb950?style=flat-square" />
-      <img src="https://img.shields.io/badge/Neo4j-Learning-3fb950?style=flat-square" />
     </td>
     <td align="center" width="25%">
       <h4>🛠️ Tools</h4>
       <br/>
       <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,postman&perline=3" />
       <br/><br/>
-      <img src="https://img.shields.io/badge/VS_Code-Expert-bc8cff?style=flat-square" />
-      <img src="https://img.shields.io/badge/Git-Expert-bc8cff?style=flat-square" />
     </td>
   </tr>
 </table>
@@ -195,10 +187,9 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
 
 </div>
 
+---
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="95%" />
-</div>
+
 
 ---
 
