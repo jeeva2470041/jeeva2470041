@@ -198,7 +198,9 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
 ---
 
 <!-- TROPHY SECTION -->
-
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=jeeva2470041&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=5&margin-h=5" width="98%" />
+</div>
 
 ---
 
