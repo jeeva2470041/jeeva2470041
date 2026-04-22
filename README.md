@@ -1,4 +1,4 @@
-<img align="center" alt="Banner" src="https://postimg.cc/ZWxmd45F"/>
+<img align="center" alt="Banner" src="https://i.postimg.cc/zG9G4fmM/image.png"/>
 
 <h1 align="left">
   Hi, I'm <strong>Jeeva G</strong>
@@ -11,7 +11,7 @@
 
   <p>
     I build software that solves real-world problems, focusing on practical and scalable solutions rather than just academic projects.  
-    My work spans across FinTech, AgriTech,RAG and student-focused platforms.
+    My work spans across FinTech, AgriTech, RAG and student-focused platforms.
   </p>
 
   <p>
@@ -32,7 +32,7 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logoColor=white" />
   </a>
 
-  <a href=https://jeeva-g.vercel.app/">
+  <a href="https://jeeva-g.vercel.app/">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logoColor=white" />
   </a>
 </p>
