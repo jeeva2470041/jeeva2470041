@@ -1,7 +1,6 @@
-<img align="center" alt="Banner" src="YOUR-BANNER-LINK-HERE"/>
+<img align="center" alt="Banner" src="https://postimg.cc/ZWxmd45F"/>
 
 <h1 align="left">
-  <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" width="28" />
   Hi, I'm <strong>Jeeva G</strong>
 </h1>
 
@@ -63,7 +62,7 @@
 <table>
 <tr>
 <td width="50%" align="center">
-<h3>💻 Languages</h3>
+<h3> Languages</h3>
 
 <img src="https://skillicons.dev/icons?i=python,js,html,css" />
 <br/><br/>
@@ -71,7 +70,7 @@
 </td>
 
 <td width="50%" align="center">
-<h3>⚙️ Frameworks</h3>
+<h3> Frameworks</h3>
 
 <img src="https://skillicons.dev/icons?i=react,flask" />
 </td>
@@ -79,7 +78,7 @@
 
 <tr>
 <td width="50%" align="center">
-<h3>🗄️ Databases</h3>
+<h3> Databases</h3>
 
 <img src="https://skillicons.dev/icons?i=mysql,mongodb" />
 <br/><br/>
@@ -87,7 +86,7 @@ Neo4j (Graph DB)
 </td>
 
 <td width="50%" align="center">
-<h3>🧰 Tools</h3>
+<h3> Tools</h3>
 
 <img src="https://skillicons.dev/icons?i=git,github,vscode" />
 </td>
@@ -101,5 +100,5 @@ Neo4j (Graph DB)
 
 <div align="center">
   <br/>
-  <img src="https://streak-stats.demolab.com?user=YOUR-USERNAME&theme=dark&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=jeeva2470041&theme=dark&hide_border=true" />
 </div>
