@@ -195,21 +195,6 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
 
 </div>
 
----
-
-
-
----
-
-<!-- CONTRIBUTION & CLOSING -->
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=jeeva2470041&theme=github_dark" width="98%" />
-  <br/><br/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=jeeva2470041&theme=github_dark&utcOffset=5.5" width="49%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=jeeva2470041&theme=github_dark" width="49%" />
-</div>
-
-<br/>
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="95%" />
