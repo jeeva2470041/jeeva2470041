@@ -1,5 +1,4 @@
-<img align="center" alt="Banner" src=["https://i.postimg.cc/zG9G4fmM/image.png"](https://i.postimg.cc/zG9G4fmM/image.png)/>
-
+<img align="center" alt="Banner" src="https://i.postimg.cc/zG9G4fmM/image.png"/>
 <h1 align="left">
   Hi, I'm <strong>Jeeva G</strong>
 </h1>
