@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeeva G — Skills & Tech Stack</title>
+    <meta name="description" content="Interactive skills and technology stack showcase for Jeeva G — developer building real-world applications.">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================================
+           THEME VARIABLES
+           ============================================================ */
+        [data-theme="dark"] {
+            --bg: #080b12;
+            --bg2: #0d1117;
+            --panel: #111820;
+            --card: #111820;
+            --card-hover: #161e2d;
+            --border: rgba(255, 255, 255, 0.06);
+            --border-hover: rgba(88, 166, 255, 0.35);
+            --text: #cdd9e5;
+            --text-strong: #e6edf3;
+            --muted: #4a5568;
+            --muted2: #374151;
+            --shadow: rgba(0, 0, 0, 0.5);
+            --tab-active-txt: #000;
+            --toggle-bg: #1c2433;
+            --toggle-border: rgba(255, 255, 255, 0.1);
+            --stat-num: #e6edf3;
+            --tooltip-bg: #1c2433;
+            --tooltip-border: rgba(255, 255, 255, 0.1);
+            --header-sub: #4a5568;
+            --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+        }
+
+        [data-theme="light"] {
+            --bg: #f0f4f8;
+            --bg2: #e8edf3;
+            --panel: #ffffff;
+            --card: #ffffff;
+            --card-hover: #f8fafc;
+            --border: rgba(0, 0, 0, 0.08);
+            --border-hover: rgba(37, 99, 235, 0.4);
+            --text: #1e293b;
+            --text-strong: #0f172a;
+            --muted: #94a3b8;
+            --muted2: #cbd5e1;
+            --shadow: rgba(0, 0, 0, 0.12);
+            --tab-active-txt: #ffffff;
+            --toggle-bg: #e2e8f0;
+            --toggle-border: rgba(0, 0, 0, 0.08);
+            --stat-num: #0f172a;
+            --tooltip-bg: #1e293b;
+            --tooltip-border: rgba(0, 0, 0, 0.15);
+            --header-sub: #94a3b8;
+            --noise: none;
+        }
+
+        /* ============================================================
+           RESET & BASE
+           ============================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 48px 24px 64px;
+            transition: background 0.35s ease, color 0.35s ease;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: var(--noise);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 920px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============================================================
+           BACK LINK
+           ============================================================ */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            text-decoration: none;
+            margin-bottom: 24px;
+            padding: 6px 14px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .back-link:hover {
+            color: #58a6ff;
+            border-color: rgba(88, 166, 255, 0.3);
+            background: rgba(88, 166, 255, 0.05);
+        }
+
+        /* ============================================================
+           THEME TOGGLE
+           ============================================================ */
+        .theme-toggle {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 100;
+            background: var(--toggle-bg);
+            border: 1px solid var(--toggle-border);
+            border-radius: 100px;
+            padding: 6px;
+            display: flex;
+            gap: 4px;
+            box-shadow: 0 4px 20px var(--shadow);
+            transition: background 0.3s, border 0.3s;
+        }
+
+        .theme-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 100px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            transition: all 0.2s ease;
+            color: var(--muted);
+        }
+
+        .theme-btn:hover {
+            background: var(--border);
+            color: var(--text);
+        }
+
+        .theme-btn.active {
+            background: var(--text-strong);
+            color: var(--bg);
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        /* ============================================================
+           HEADER
+           ============================================================ */
+        .header {
+            text-align: center;
+            margin-bottom: 44px;
+            padding-top: 8px;
+        }
+
+        .header-eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .header-eyebrow::before,
+        .header-eyebrow::after {
+            content: '';
+            width: 48px;
+            height: 1px;
+            background: var(--border);
+            border-radius: 1px;
+        }
+
+        .header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(28px, 5vw, 38px);
+            font-weight: 800;
+            color: var(--text-strong);
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+            transition: color 0.3s;
+        }
+
+        .header h1 span {
+            background: linear-gradient(135deg, #58a6ff, #39d0d8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: var(--header-sub);
+            transition: color 0.3s;
+        }
+
+        /* ============================================================
+           SEARCH BAR
+           ============================================================ */
+        .search-wrap {
+            position: relative;
+            max-width: 320px;
+            margin: 0 auto 28px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted);
+            font-size: 14px;
+            pointer-events: none;
+            transition: color 0.3s;
+        }
+
+        .search-input {
+            width: 100%;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 14px 10px 38px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text);
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .search-input::placeholder {
+            color: var(--muted);
+        }
+
+        .search-input:focus {
+            border-color: rgba(88, 166, 255, 0.4);
+            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.08);
+        }
+
+        [data-theme="light"] .search-input {
+            background: #fff;
+        }
+
+        /* ============================================================
+           FILTER TABS
+           ============================================================ */
+        .tabs {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            padding: 7px 18px;
+            border-radius: 100px;
+            border: 1px solid var(--border);
+            background: var(--panel);
+            color: var(--muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: lowercase;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tab:hover {
+            border-color: rgba(88, 166, 255, 0.3);
+            color: var(--text);
+            background: var(--card-hover);
+        }
+
+        .tab.active {
+            background: #58a6ff;
+            border-color: #58a6ff;
+            color: var(--tab-active-txt);
+            font-weight: 700;
+            box-shadow: 0 2px 12px rgba(88, 166, 255, 0.3);
+        }
+
+        .tab-count {
+            font-size: 9px;
+            opacity: 0.7;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1px 5px;
+            border-radius: 100px;
+        }
+
+        .tab.active .tab-count {
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        /* ============================================================
+           SORT ROW
+           ============================================================ */
+        .sort-row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .sort-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--muted);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .sort-btn {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            padding: 4px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            background: var(--panel);
+            color: var(--muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .sort-btn:hover,
+        .sort-btn.active {
+            border-color: rgba(88, 166, 255, 0.3);
+            color: #58a6ff;
+        }
+
+        /* ============================================================
+           SKILLS GRID
+           ============================================================ */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+            gap: 10px;
+            position: relative;
+        }
+
+        /* ============================================================
+           SKILL CARD
+           ============================================================ */
+        .skill-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 22px 14px 16px;
+            text-align: center;
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(14px) scale(0.97);
+            animation: cardIn 0.45s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+            transition:
+                transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.25s,
+                box-shadow 0.25s,
+                background 0.25s,
+                opacity 0.3s;
+        }
+
+        .skill-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 0%, var(--glow-color, transparent) 0%, transparent 65%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 14px;
+            pointer-events: none;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px) scale(1.025);
+            background: var(--card-hover);
+            box-shadow: 0 12px 40px var(--shadow), 0 0 0 1px var(--cat-color, #58a6ff) inset;
+            border-color: var(--cat-color, #58a6ff);
+            z-index: 2;
+        }
+
+        .skill-card:hover::after {
+            opacity: 1;
+        }
+
+        .skill-card:hover .skill-icon {
+            transform: scale(1.15) rotate(-4deg);
+        }
+
+        .skill-card:hover .skill-icon img {
+            filter: brightness(1.15) drop-shadow(0 0 6px var(--cat-color, #58a6ff));
+        }
+
+        .skill-card:hover .prof-bar {
+            box-shadow: 0 0 8px var(--cat-color, #58a6ff);
+        }
+
+        .skill-card.filtered-out {
+            opacity: 0 !important;
+            transform: scale(0.88) !important;
+            pointer-events: none;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            border: none;
+            overflow: hidden;
+        }
+
+        @keyframes cardIn {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* GLOW dot */
+        .cat-dot {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--cat-color);
+            opacity: 0.75;
+            box-shadow: 0 0 4px var(--cat-color);
+        }
+
+        /* ICON */
+        .skill-icon {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 13px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--icon-bg, rgba(255, 255, 255, 0.04));
+        }
+
+        [data-theme="light"] .skill-icon {
+            background: var(--icon-bg, rgba(0, 0, 0, 0.04));
+        }
+
+        .skill-icon img {
+            width: 34px;
+            height: 34px;
+            object-fit: contain;
+            transition: filter 0.25s;
+        }
+
+        .skill-icon .fallback {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--cat-color);
+        }
+
+        /* NAME */
+        .skill-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-strong);
+            margin-bottom: 8px;
+            line-height: 1.3;
+            transition: color 0.3s;
+        }
+
+        /* PROFICIENCY BAR */
+        .prof-wrap {
+            height: 2px;
+            background: var(--border);
+            border-radius: 2px;
+            overflow: visible;
+            margin-bottom: 7px;
+            position: relative;
+        }
+
+        .prof-bar {
+            height: 100%;
+            border-radius: 2px;
+            width: 0%;
+            background: var(--cat-color);
+            transition: width 1s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s;
+            position: relative;
+        }
+
+        .prof-bar::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--cat-color);
+            box-shadow: 0 0 4px var(--cat-color);
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .skill-card:hover .prof-bar::after {
+            opacity: 1;
+        }
+
+        .prof-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            color: var(--muted);
+            letter-spacing: 0.06em;
+            transition: color 0.3s;
+        }
+
+        /* TOOLTIP */
+        .skill-tooltip {
+            position: absolute;
+            bottom: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%) translateY(6px);
+            background: var(--tooltip-bg);
+            border: 1px solid var(--tooltip-border);
+            border-radius: 8px;
+            padding: 7px 14px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            white-space: nowrap;
+            color: var(--text-strong);
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            z-index: 20;
+            box-shadow: 0 4px 16px var(--shadow);
+        }
+
+        .skill-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 4px solid transparent;
+            border-top-color: var(--tooltip-border);
+        }
+
+        .skill-card:hover .skill-tooltip {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ============================================================
+           EMPTY STATE
+           ============================================================ */
+        .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 48px 20px;
+            color: var(--muted);
+            font-size: 14px;
+            display: none;
+        }
+
+        .empty-state.show {
+            display: block;
+        }
+
+        /* ============================================================
+           STATS ROW
+           ============================================================ */
+        .stats-section {
+            margin-top: 28px;
+        }
+
+        .stats-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .stat-card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px 12px;
+            text-align: center;
+            transition: border-color 0.2s, background 0.3s, transform 0.2s;
+            cursor: default;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(88, 166, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .stat-icon {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .stat-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--stat-num);
+            margin-bottom: 4px;
+            transition: color 0.3s;
+        }
+
+        .stat-lbl {
+            font-size: 11px;
+            color: var(--muted);
+            transition: color 0.3s;
+        }
+
+        /* ============================================================
+           CATEGORY LEGEND
+           ============================================================ */
+        .legend {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 22px;
+            margin-bottom: 4px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--muted);
+            letter-spacing: 0.06em;
+            text-transform: lowercase;
+        }
+
+        .legend-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px currentColor;
+        }
+
+        /* ============================================================
+           FOOTER
+           ============================================================ */
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            padding: 24px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--muted);
+            letter-spacing: 0.05em;
+        }
+
+        .footer-text a {
+            color: #58a6ff;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .footer-text a:hover {
+            opacity: 0.8;
+        }
+
+        /* ============================================================
+           RESPONSIVE
+           ============================================================ */
+        @media (max-width: 640px) {
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .theme-toggle {
+                top: 16px;
+                right: 16px;
+            }
+
+            body {
+                padding: 40px 16px 64px;
+            }
+
+            .sort-row {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- THEME TOGGLE -->
+    <div class="theme-toggle" role="group" aria-label="Theme selector">
+        <button class="theme-btn active" id="btn-dark" title="Dark theme" onclick="setTheme('dark')">🌙</button>
+        <button class="theme-btn" id="btn-light" title="Light theme" onclick="setTheme('light')">☀️</button>
+    </div>
+
+    <div class="page">
+
+        <!-- BACK LINK -->
+        <a href="https://github.com/jeeva2470041" class="back-link">← back to profile</a>
+
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-eyebrow">tech stack</div>
+            <h1>Skills & <span>Technologies</span></h1>
+            <p>Filter by category · Hover for details · Sort by proficiency</p>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input class="search-input" id="search" type="text" placeholder="search skills..." autocomplete="off" />
+        </div>
+
+        <!-- FILTER TABS -->
+        <div class="tabs" id="tabs">
+            <button class="tab active" data-filter="all">all <span class="tab-count" id="count-all">20</span></button>
+            <button class="tab" data-filter="language">languages <span class="tab-count" id="count-language">0</span></button>
+            <button class="tab" data-filter="framework">frameworks <span class="tab-count" id="count-framework">0</span></button>
+            <button class="tab" data-filter="database">databases <span class="tab-count" id="count-database">0</span></button>
+            <button class="tab" data-filter="tool">tools <span class="tab-count" id="count-tool">0</span></button>
+        </div>
+
+        <!-- SORT -->
+        <div class="sort-row">
+            <span class="sort-label">sort:</span>
+            <button class="sort-btn active" data-sort="default">default</button>
+            <button class="sort-btn" data-sort="az">a → z</button>
+            <button class="sort-btn" data-sort="prof">proficiency</button>
+        </div>
+
+        <!-- GRID -->
+        <div class="skills-grid" id="grid">
+            <div class="empty-state" id="empty">No skills found for "<span id="empty-q"></span>"</div>
+        </div>
+
+        <!-- LEGEND -->
+        <div class="legend" id="legend"></div>
+
+        <!-- STATS -->
+        <div class="stats-section">
+            <div class="stats-label">at a glance</div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-num" id="showing-count">20</div>
+                    <div class="stat-lbl">Skills Listed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-num">7</div>
+                    <div class="stat-lbl">Projects Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-num">1st</div>
+                    <div class="stat-lbl">Hackathon Place</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-num">SSN</div>
+                    <div class="stat-lbl">M.Tech CSE</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p class="footer-text">
+                Built by <a href="https://github.com/jeeva2470041">Jeeva G</a> · 
+                <a href="https://jeeva-g.vercel.app/">Portfolio</a> · 
+                <a href="https://www.linkedin.com/in/jeevain/">LinkedIn</a>
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        /* ============================================================
+           DATA
+           ============================================================ */
+        const CAT_COLORS = {
+            language: '#58a6ff',
+            framework: '#39d0d8',
+            database: '#3fb950',
+            tool: '#bc8cff',
+        };
+
+        const SKILLS = [
+            // LANGUAGES
+            { name: 'Python',     cat: 'language',  prof: 90, tip: 'Primary language — Flask, ML, automation',        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+            { name: 'Dart',       cat: 'language',  prof: 80, tip: 'Flutter apps — PayTrace, AgriAssist',            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg' },
+            { name: 'JavaScript', cat: 'language',  prof: 75, tip: 'Web & frontend development',                     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+            { name: 'HTML5',      cat: 'language',  prof: 85, tip: 'Markup, structure & semantics',                  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+            { name: 'CSS3',       cat: 'language',  prof: 78, tip: 'Styling, animations & responsive layouts',       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+            { name: 'Java',       cat: 'language',  prof: 65, tip: 'OOP fundamentals & data structures',             icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+
+            // FRAMEWORKS
+            { name: 'Flutter',    cat: 'framework', prof: 82, tip: 'Cross-platform mobile — 3 apps built',          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg' },
+            { name: 'React',      cat: 'framework', prof: 72, tip: 'Frontend UIs — EcoFeed, UniHub',                icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+            { name: 'Flask',      cat: 'framework', prof: 78, tip: 'REST APIs & Python backends',                   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg' },
+            { name: 'MLflow',     cat: 'framework', prof: 60, tip: 'ML experiment tracking — PayTrace',             icon: 'https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white' },
+
+            // DATABASES
+            { name: 'MySQL',      cat: 'database',  prof: 78, tip: 'Relational data modelling',                     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+            { name: 'MongoDB',    cat: 'database',  prof: 72, tip: 'NoSQL — EcoFeed, CampusShare',                  icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+            { name: 'SQLite',     cat: 'database',  prof: 88, tip: 'Attendance System — 100+ students',             icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg' },
+            { name: 'Neo4j',      cat: 'database',  prof: 60, tip: 'Graph database & relationship queries',         icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neo4j/neo4j-original.svg' },
+            { name: 'Firebase',   cat: 'database',  prof: 68, tip: 'Real-time DB — CampusShare (IIT KGP)',          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
+
+            // TOOLS
+            { name: 'Git',        cat: 'tool',      prof: 88, tip: 'Version control on all projects',               icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+            { name: 'GitHub',     cat: 'tool',      prof: 88, tip: 'All 7 projects hosted & documented',            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+            { name: 'VS Code',    cat: 'tool',      prof: 92, tip: 'Primary editor for all development',            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
+            { name: 'Vercel',     cat: 'tool',      prof: 75, tip: 'Portfolio deployed at jeeva-g.vercel.app',       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg' },
+            { name: 'Postman',    cat: 'tool',      prof: 72, tip: 'API testing & documentation',                   icon: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
+        ];
+
+        function profLabel(n) {
+            if (n >= 88) return 'expert';
+            if (n >= 78) return 'advanced';
+            if (n >= 65) return 'proficient';
+            return 'learning';
+        }
+
+        /* ============================================================
+           STATE
+           ============================================================ */
+        let currentFilter = 'all';
+        let currentSort = 'default';
+        let currentSearch = '';
+
+        /* ============================================================
+           BUILD LEGEND
+           ============================================================ */
+        function buildLegend() {
+            const legend = document.getElementById('legend');
+            Object.entries(CAT_COLORS).forEach(([cat, color]) => {
+                const item = document.createElement('div');
+                item.className = 'legend-item';
+                item.innerHTML = `<span class="legend-dot" style="background:${color};color:${color}"></span>${cat}`;
+                legend.appendChild(item);
+            });
+        }
+
+        /* ============================================================
+           UPDATE COUNTS
+           ============================================================ */
+        function updateCounts() {
+            const cats = ['language', 'framework', 'database', 'tool'];
+            const q = currentSearch.toLowerCase();
+
+            cats.forEach(cat => {
+                const count = SKILLS.filter(s => {
+                    const matchQ = !q || s.name.toLowerCase().includes(q) || s.tip.toLowerCase().includes(q);
+                    return matchQ && s.cat === cat;
+                }).length;
+                const el = document.getElementById(`count-${cat}`);
+                if (el) el.textContent = count;
+            });
+
+            const allCount = SKILLS.filter(s => {
+                const matchQ = !q || s.name.toLowerCase().includes(q) || s.tip.toLowerCase().includes(q);
+                return matchQ;
+            }).length;
+            const elAll = document.getElementById('count-all');
+            if (elAll) elAll.textContent = allCount;
+        }
+
+        /* ============================================================
+           RENDER GRID
+           ============================================================ */
+        function render() {
+            const grid = document.getElementById('grid');
+            const empty = document.getElementById('empty');
+            const q = currentSearch.toLowerCase();
+
+            // Filter
+            let filtered = SKILLS.filter(s => {
+                const matchCat = currentFilter === 'all' || s.cat === currentFilter;
+                const matchQ = !q || s.name.toLowerCase().includes(q) || s.tip.toLowerCase().includes(q);
+                return matchCat && matchQ;
+            });
+
+            // Sort
+            if (currentSort === 'az') filtered.sort((a, b) => a.name.localeCompare(b.name));
+            if (currentSort === 'prof') filtered.sort((a, b) => b.prof - a.prof);
+
+            // Clear (keep empty state)
+            Array.from(grid.children).forEach(c => {
+                if (c !== empty) c.remove();
+            });
+
+            // Empty state
+            if (filtered.length === 0) {
+                empty.classList.add('show');
+                document.getElementById('empty-q').textContent = currentSearch;
+                document.getElementById('showing-count').textContent = 0;
+                updateCounts();
+                return;
+            }
+
+            empty.classList.remove('show');
+
+            // Build cards
+            filtered.forEach((skill, i) => {
+                const color = CAT_COLORS[skill.cat];
+                const isShield = skill.icon.includes('shields.io') || skill.icon.includes('img.shields.io');
+
+                const card = document.createElement('div');
+                card.className = 'skill-card';
+                card.dataset.cat = skill.cat;
+                card.style.setProperty('--cat-color', color);
+                card.style.setProperty('--glow-color', color + '18');
+                card.style.setProperty('--icon-bg', color + '15');
+                card.style.animationDelay = `${i * 38}ms`;
+
+                card.innerHTML = `
+                    <span class="cat-dot" style="background:${color};box-shadow:0 0 5px ${color}"></span>
+                    <div class="skill-tooltip">${skill.tip}</div>
+                    <div class="skill-icon">
+                        ${isShield
+                            ? `<div class="fallback" style="color:${color}">${skill.name.slice(0, 2)}</div>`
+                            : `<img src="${skill.icon}" alt="${skill.name}" loading="lazy" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div class=\\'fallback\\' style=\\'color:${color}\\'>${skill.name.slice(0,2)}</div>')" />`
+                        }
+                    </div>
+                    <div class="skill-name">${skill.name}</div>
+                    <div class="prof-wrap">
+                        <div class="prof-bar" data-w="${skill.prof}" style="background:${color}"></div>
+                    </div>
+                    <div class="prof-label">${profLabel(skill.prof)}</div>
+                `;
+
+                grid.insertBefore(card, empty);
+
+                // Animate bar
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        const bar = card.querySelector('.prof-bar');
+                        if (bar) {
+                            bar.style.transition = 'width 1s cubic-bezier(0.4,0,0.2,1)';
+                            bar.style.width = bar.dataset.w + '%';
+                        }
+                    }, 80 + i * 38);
+                });
+            });
+
+            document.getElementById('showing-count').textContent = filtered.length;
+            updateCounts();
+        }
+
+        /* ============================================================
+           TABS
+           ============================================================ */
+        document.getElementById('tabs').addEventListener('click', e => {
+            const tab = e.target.closest('.tab');
+            if (!tab) return;
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            currentFilter = tab.dataset.filter;
+            render();
+        });
+
+        /* ============================================================
+           SORT
+           ============================================================ */
+        document.querySelectorAll('.sort-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentSort = btn.dataset.sort;
+                render();
+            });
+        });
+
+        /* ============================================================
+           SEARCH
+           ============================================================ */
+        let searchTimer;
+        document.getElementById('search').addEventListener('input', e => {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(() => {
+                currentSearch = e.target.value.trim();
+                currentFilter = 'all';
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelector('.tab[data-filter="all"]').classList.add('active');
+                render();
+            }, 200);
+        });
+
+        /* ============================================================
+           THEME
+           ============================================================ */
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            document.getElementById('btn-dark').classList.toggle('active', theme === 'dark');
+            document.getElementById('btn-light').classList.toggle('active', theme === 'light');
+            localStorage.setItem('theme', theme);
+        }
+
+        // On load — restore saved theme
+        (function () {
+            const saved = localStorage.getItem('theme') || 'dark';
+            setTheme(saved);
+        })();
+
+        /* ============================================================
+           INIT
+           ============================================================ */
+        buildLegend();
+        render();
+    </script>
+</body>
+</html>
