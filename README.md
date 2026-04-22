@@ -160,7 +160,7 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
 <div align="center">
   
   <!-- INTERACTIVE SKILLS PAGE LINK -->
-  <a href="https://jeeva2470041.github.io/skills">
+  <a href="https://jeeva2470041.github.io/skills"/>
     <img src="https://img.shields.io/badge/🔍_Explore_Interactive_Skills_Page-58a6ff?style=for-the-badge&labelColor=0d1117" />
   </a>
   
