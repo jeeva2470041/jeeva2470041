@@ -1,5 +1,4 @@
-<img align="center" alt="Banner" src="https://i.postimg.cc/zG9G4fmM/image.png"/>
-<h1 align="left">
+<a href='https://postimg.cc/ZWxmd45F' target='_blank'><img src='https://i.postimg.cc/zG9G4fmM/image.png' border='0' alt='image'></a><h1 align="left">
   Hi, I'm <strong>Jeeva G</strong>
 </h1>
 
