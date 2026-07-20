@@ -163,30 +163,6 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
 
 ---
 
-<!-- GITHUB STATS SECTION -->
-## <img src="https://user-images.githubusercontent.com/74038190/216122049-276bc7a5-c328-408a-b3a9-f0f3da404f9b.png" width="30" /> GitHub Analytics
-
-<div align="center">
-  
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=jeeva2470041&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=39d0d8&text_color=cdd9e5&ring_color=58a6ff" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeeva2470041&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=cdd9e5" />
-
-  <br/><br/>
-  
-  <img width="70%" src="https://streak-stats.demolab.com?user=jeeva2470041&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=58a6ff&ring=58a6ff&fire=39d0d8&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=4a5568" />
-  
-  <br/><br/>
-  
-  <!-- CONTRIBUTION GRAPH -->
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=jeeva2470041&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=39d0d8&point=58a6ff&area=true&area_color=58a6ff" />
-
-</div>
-
----
-
-
-
----
 
 <div align="center">
   
