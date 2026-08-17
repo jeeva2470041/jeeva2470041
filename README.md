@@ -49,7 +49,7 @@ My work spans across **FinTech**, **AgriTech**, **RAG**, and **student-focused p
 - 🏆 **1st Place** Hackathon Winner — PayTrace
 - 🎓 **M.Tech CSE** at SSN College of Engineering
 - 💡 Passionate about building things people actually use
-- 📫 Reach me at **priyagovinth2019@gmail.com**
+- 📫 Reach me at **jeeva.g.dev@gmail.com**
 
 <br clear="both" />
 
