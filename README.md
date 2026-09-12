@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/📍_India-0d1117?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/🏆_Hackathon_Winner-0d1117?style=for-the-badge&labelColor=0d1117" />
   <img src="https://img.shields.io/badge/🎓_M.Tech_CSE_—_SSN-0d1117?style=for-the-badge&labelColor=0d1117" />
-  <img src="https://img.shields.io/badge/🚀_7+_Projects_Built-0d1117?style=for-the-badge&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/🚀_10+_Projects_Built-0d1117?style=for-the-badge&labelColor=0d1117" />
   
   <br/><br/>
   
